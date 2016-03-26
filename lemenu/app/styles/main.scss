@@ -38,12 +38,11 @@ html,body{
     }
     .content{
      max-width: 600px;
-    min-width: 400px;
+    min-width: 320px;
     padding: 20px;
     color: #fff;
     margin: auto;    
-    text-align: left;
-    height: 100px;
+    text-align: left; 
     position: absolute;
     top: 10%;
     -webkit-transform: translateY(-10%);
@@ -51,9 +50,9 @@ html,body{
     transform: translateY(-10%);
     z-index: 1;
            h1,h2,h3,h4{ margin: 0px;}
-           h1{ font-size: 80px;
+           h1{ font-size: 70px;
                 }
-                
+
     }
 }
 .per30{ 
@@ -61,4 +60,11 @@ html,body{
   background: #fff;
   position: relative;
 
+}
+
+
+.cookiebg{
+  background: url(https://images.unsplash.com/photo-1427025635812-0a30f21071e4?crop=entropy&fit=crop&fm=jpg&h=1000&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1875);
+   background-position: center top;
+ background-size: cover;
 }
