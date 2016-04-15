@@ -29,35 +29,47 @@
     
     <section  id="fullpageburgerserve">
     <div class="container">
-      <div class="pull-left">
+      <div  class="topheader">
       <h1 class="supertitle">
           Make a burger with <span>YOUR</span> Style
       </h1>
       <h4>choose your ingredients and make it awesome</h4>
       </div>
-      
+      <div class="card big-card">
+          <img class="ingredient_type" src="images/icons/food-2.png">
+          <div class="item_image">
+                <img src="images/burgerangus.png" class="img-responsive center-block">
+          </div>
+
+          <div class="card_buttons">
+             <div class="iteminfo">
+          <h2> Angus Hamburger </h2>
+          <p class="pieceweight"> 180g     </p><p class="price"> <span>$</span> 5.00</p>
+        </div>  
+            <div class="btn btn-success ingredient_add"> Add </div>
+
+             
+          </div>
+
+
+      </div>
 
        <div class="botao ylwbutton">
-        Iniciar
+        Next
        </div>
 
     </div>
   </section>
     
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-    <script>
-      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-      e.src='https://www.google-analytics.com/analytics.js';
-      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-      ga('create','UA-XXXXX-X');ga('send','pageview');
-    </script>
+    
 
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
     <script src="/bower_components/jquery/dist/jquery.js"></script>
      <script src="/bower_components/angular/angular.js"></script>
+     
+    <script src="scripts/main.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
     
@@ -77,7 +89,6 @@
     <!-- endbuild -->
     
     <!-- build:js scripts/main.js -->
-    <script src="scripts/main.js"></script>
     <!-- endbuild -->
   </body>
 </html>
