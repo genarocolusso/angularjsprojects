@@ -3,54 +3,62 @@ $icon-font-path: '../fonts/';
 // bower:scss
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 // endbower
- @import url(https://fonts.googleapis.com/css?family=Pacifico|Roboto+Condensed);
+@import url(https://fonts.googleapis.com/css?family=Pacifico|Roboto+Condensed);
 
- $yellow : #FFD804;
- $soft-yellow : #FFD960;
+$yellow : #FFD804;
+$soft-yellow : #FFD960;
 
- body{
+body{
   font-family: 'Roboto Condensed', sans-serif;
-   *{ transition: all 0.6s ease}
- }
- html,body{ margin: 0px; padding: 0px;}
+  *{ transition: all 0.6s ease}
+}
+html,body{ margin: 0px; padding: 0px;}
 
- #fullpageburgerserve{
+#fullpageburgerserve{
   min-height: 700px;
   max-height: 3000px;
   background: url(../images/bgBurger.jpg) no-repeat;
   background-position: center;
   background-size: cover;
-   font-family: 'Pacifico', cursive;
-   color: #fff;
-   h1{
-      span{     color: $yellow;}
-   }
-   h4{
-     font-family: 'Roboto Condensed', sans-serif;
-         color: $soft-yellow;
-   }
+  font-family: 'Pacifico', cursive;
+  color: #fff;
+  h1{
+    span{     color: $yellow;}
+  }
+  h4{
+   font-family: 'Roboto Condensed', sans-serif;
+   color: $soft-yellow;
+ }
 
 
-   .burger_area {
-    padding: 20px;
-    background: #fff;
-    /* color: #000 !important; */
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.33);
-    background-color: white;
-    margin: 200px 20px;
+ .burger_area {
+  padding: 20px;
+  background: #fff;
+  /* color: #000 !important; */
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.33);
+  background-color: white;
+  margin: 200px 20px;
+  ul{     list-style-type: none; 
+    color: #000;
+    li{ margin: 10px 0px;
+      font-size: 18px;
+      border-bottom: dotted 2px #636363;
+    }
+  }
 }
 
 .burger_area h4 {
-    margin: 0;
-    padding: 0;
-    color: #3E3E3E !important;
+  margin: 0;
+  padding: 0;
+  color: #3E3E3E !important;
 }
- 
- }
- .build{
+
+}
+.build{
   position: relative;
   min-height: 600px;
- }
+  margin: 40px auto;
+}
 
 .ingredient_type{
   padding: 10px;
@@ -59,89 +67,97 @@ $icon-font-path: '../fonts/';
 }
 
 .cardburg{ 
-    background: #AF4545;
-    background-size: cover;
-    border-radius: 4px;
-       box-shadow:  1px 1px 30px rgba(0, 0, 0, 0.17), -1px -1px 30px rgba(0, 0, 0, 0.13);
-    margin: -100px auto 0% auto;
-    width: 420px;
-    &:hover{ transform:scale(1.05)}
+  background: #AF4545;
+  background-size: cover;
+  border-radius: 4px;
+  box-shadow:  1px 1px 30px rgba(0, 0, 0, 0.17), -1px -1px 30px rgba(0, 0, 0, 0.13);
+   
+   
+    float: left;
+   
+  &:hover{ transform:scale(1.05); z-index: 99;}
 
-    .card_buttons {
+  .card_buttons {
     padding: 20px;
     background: #fff;
     border-bottom-left-radius: 4px;
     border-bottom-right-radius: 4px;
 
     position: relative;
- .ingredient_add {
-    right: 20px;
-    position: absolute;
-     }
+    .ingredient_add {
+      right: 20px;
+      position: absolute;
+    }
   }
-     .iteminfo{
+  .iteminfo{
 
-      display: inline-block;
-     
+    display: inline-block;
 
-     h2{ margin: 0px; color: #000;}
-     .pieceweight{
-          color: #909090;
-          font-size: 1.2em;
-          margin-top: 1em;
 
-    float:left;
+    h2{ margin: 0px; color: #000;}
+    .pieceweight{
+      color: #909090;
+      font-size: 1.2em;
+      margin-top: 1em;
 
-     }
-     .price{  
-          margin-top: 0.1em;
-    font-size: 2em;
-    color: #B96B14;
-    float: left;
-    margin-left: 10px;
+      float:left;
+
+    }
+    .price{  
+      margin-top: 0.1em;
+      font-size: 2em;
+      color: #B96B14;
+      float: left;
+      margin-left: 10px;
       span{ font-size:0.5em;}
     }
-   }
+  }
 }
 
 .botao{
   padding: 10px 30px;  
   font-size:  20px;
   background: #fff;
-      bottom: 10%;
-    margin: auto;
-    position: absolute;
-    text-align: center;
-    width: 200px;
-    left: 0;
-    right: 0;
-     &:hover{
-       
-       transition: 0.5s;
-       
-       color: #fff;
-       cursor: pointer;
+  bottom: 10%;
+  margin: auto;
+  position: absolute;
+  text-align: center;
+  width: 200px;
+  left: 0;
+  right: 0;
+  &:hover{
 
-     }
+   transition: 0.5s;
+
+   color: #fff;
+   cursor: pointer;
+
+ }
 }
 .ylwbutton{
   color: $yellow;
   border: 3px solid $yellow; 
-   &:hover{ border: 3px solid $yellow;
-    
-       transition: 0.5s;
-       background: $yellow;}
-}
+  &:hover{ border: 3px solid $yellow;
+
+   transition: 0.5s;
+   background: $yellow;}
+ }
 
 
 
-
- *, :after, :before {
-    box-sizing: border-box;
-}
+ 
 
 @media (max-width:420px){
   .cardburg{
     width: 320px;
   }
+}
+
+.nopad{ padding: 0;}
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: border-box !important;
 }
