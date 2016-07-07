@@ -17,10 +17,10 @@ html,body{ margin: 0px; padding: 0px;}
 #fullpageburgerserve{
   min-height: 700px;
   max-height: 3000px;
-  background: url(../images/bgBurger.jpg) no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.48), rgba(23, 23, 23, 0.3)),  url(https://mcdonalds.com.au/sites/mcdonalds.com.au/files/your-burger-retouched_0.jpg) no-repeat;
   background-position: center;
   background-size: cover;
-  font-family: 'Pacifico', cursive;
+  font-family: ' ', cursive;
   color: #fff;
   h1{
     span{     color: $yellow;}
@@ -46,7 +46,10 @@ html,body{ margin: 0px; padding: 0px;}
     }
   }
 }
-
+.showingredient{
+  max-width: 200px;
+  position: absolute;
+}
 .burger_area h4 {
   margin: 0;
   padding: 0;
@@ -84,36 +87,29 @@ html,body{ margin: 0px; padding: 0px;}
     border-bottom-right-radius: 4px;
 
     position: relative;
-    .ingredient_add {
-      right: 20px;
-      position: absolute;
-    }
+    
   }
   .iteminfo{
 
-    display: inline-block;
+    display: block;
 
 
     h2{ margin: 0px; color: #000;}
     .pieceweight{
       color: #909090;
       font-size: 1.2em;
-      margin-top: 1em;
-
-      float:left;
-
+      margin-top: 1em; 
     }
-    .price{  
+    
+  }
+}
+.price{  
       margin-top: 0.1em;
       font-size: 2em;
-      color: #B96B14;
-      float: left;
+      color: #B96B14; 
       margin-left: 10px;
       span{ font-size:0.5em;}
     }
-  }
-}
-
 .botao{
   padding: 10px 30px;  
   font-size:  20px;
@@ -142,10 +138,21 @@ html,body{ margin: 0px; padding: 0px;}
    transition: 0.5s;
    background: $yellow;}
  }
+.showBurger {
+    position: relative;
+    width: 200px;
+    margin: auto;
+    min-height: 100px;
+    max-height: 1200px;
+}
+.showBurger:hover .showingredient img {
+    
+    position: relative !important;
+}
 
-
-
- 
+.showingredient img{
+                 
+}
 
 @media (max-width:420px){
   .cardburg{
@@ -160,4 +167,5 @@ html {
 }
 *, *:before, *:after {
   box-sizing: border-box !important;
+  transition: .2s all ease;
 }
